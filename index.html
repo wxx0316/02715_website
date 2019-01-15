@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02-715 Advanced Topics in Computational Genomics</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+<div class="window">
+    <h1>
+        Advanced Topics in Computational Genomics
+    </h1>
+    <h2>
+        02-715 Spring 2019, Carnegie Mellon University
+    </h2>
+    <h2>
+        Course Information
+    </h2>
+    <p>
+    <ul>
+        <li> Instructor: Seyoung Kim<br>
+            Email: <a href="mailto:sssykim@cs.cmu.edu">sssykim@cs.cmu.edu</a><br>
+            Office hour: Tue 4:30-5:30pm GHC 7721<br>
+        </li>
+        <li> TA: Yuchuan Wang <br>
+            Email: <a href="mailto:yuchuanw@andrew.cmu.edu">yuchuanw@andrew.cmu.edu</a><br>
+            Office hour: TBD <br>
+        </li>
+        <li> Time: Tue, Thu 3:00-4:20pm<br></li>
+        <li> Location: GHC 4101<br></li>
+        <li> Syllabus:<br></li>
+        <li><a href="https://piazza.com/class/jq6lrczula82j2" target="_blank">Piazza discussion board</a></li>
+    </ul>
+    </p>
+
+    <h2>
+        Course Description
+    </h2>
+    <p>
+        This course is primarily designed for graduate students to gain exposure to emerging topics in genomics that are
+        not covered in existing course offerings. The topics presented here may overlap with the students ongoing
+        research, but at least one topic should be novel. At the end of the course it is expected that students able to
+        demonstrate some knowledge of the topics presented, the goal is for each student to feel comfortable working
+        with and discussing the topics being covered with anyone on the leading edge of the field. Additionally, the
+        course may expose students to topics that could be of research interest to them later in their career and spur
+        ideas for ongoing research opportunities. We encourage the participants to integrate the projects with their own
+        research if the opportunity arises.
+
+    </p>
+
+
+    <h2>
+        Course Schedule
+    </h2>
+    <table id="schedule">
+        <tbody>
+        <tr>
+            <th>Date</th>
+            <th>Topic</th>
+            <th>Papers</th>
+        </tr>
+        <tr>
+            <td colspan="3" class="parts">Part 1: Single-cell RNA-seq</td>
+        </tr>
+        <tr>
+            <td>1/15 Tue</td>
+            <td rowspan="2">Introduction</td>
+            <td>
+                <ul>
+                    <li><a href="https://www.nature.com/articles/nbt.3711" target="_blank">Revealing the vectors of
+                        cellular identity with
+                        single-cell genomics</a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>1/17 Thu</td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>1/22 Tue</td>
+            <td>CRISPR-based perturbations</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>1/24 Thu</td>
+            <td>Projects</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>1/29 Tue</td>
+            <td>Data processing</td>
+            <td>
+                <ul>
+                    <li><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0805-z"
+                           target="_blank">ZIFA:
+                        Dimensionality reduction for zero-inflated single-cell gene expression analysis</a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>1/31 Thu</td>
+            <td>Imputation</td>
+            <td>
+                <ul>
+                    <li><a href="https://www.biorxiv.org/content/biorxiv/early/2017/02/25/111591.full.pdf"
+                           target="_blank">MAGIC:
+                        A
+                        diffusion-based imputation method reveals gene-gene interactions in single-cell RNA-seq</a><br>
+                    </li>
+
+                    <li><a href="https://www.nature.com/articles/s41467-018-03405-7" target="_blank">An accurate and
+                        robust
+                        imputation method
+                        scImpute for single-cell RNA-seq data</a><br></li>
+
+                    <li><a href="https://www.nature.com/articles/s41598-018-34688-x" target="_blank">AutoImpute:
+                        Autoencoder
+                        based imputation of
+                        single-cell RNA-seq data</a><br></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>2/5 Tue</td>
+            <td>Correcting for confounding factors</td>
+            <td>
+                <ul>
+                    <li><a href="https://www.nature.com/articles/nbt.3102" target="_blank">Computational analysis of
+                        cell-to-cell heterogeneity
+                        in single-cell RNA-sequencing data reveals hidden subpopulations of cells</a><br></li>
+                    <li><a href="https://www.pnas.org/content/115/28/E6437" target="_blank">Gene expression distribution
+                        deconvolution in
+                        single-cell RNA sequencing</a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>2/7 Thu</td>
+            <td>Clustering for cell type/state discovery</td>
+            <td>
+                <ul>
+                    <li><a href="https://www.nature.com/articles/nmeth.4236" target="_blank">SC3: consensus clustering
+                        of
+                        single-cell rna-seq
+                        data</a><br></li>
+                    <li><a href="https://www.nature.com/articles/ng.3818" target="_blank">Reference component analysis
+                        of
+                        single-cell
+                        transcriptomes elucidates cellular heterogeneity
+                        in human colorectal tumors</a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>2/12 Tue</td>
+            <td>Diff expression analysis</td>
+            <td>
+                <ul>
+                    <li><a href="https://www.nature.com/articles/nmeth.2967" target="_blank">Bayesian approach to
+                        single-cell
+                        differential expression analysis</a><br></li>
+                    <li><a href="https://www.nature.com/articles/nmeth.4150" target="_blank">Single-cell mRNA
+                        quantification and differential analysis with Census</a><br></li>
+                    <li><a href="https://www.nature.com/articles/nature13437" target="_blank">Single-cell RNA-seq
+                        reveals
+                        dynamic paracrine control of cellular variation (identifying differentially expressed genes in
+                        the
+                        pairs of clusters)</a></li>
+                    <li><a href="https://www.nature.com/articles/nature13173" target="_blank">Reconstructing lineage
+                        hierarchies
+                        of the distal lung epithelium using single-cell RNA-seq</a><br></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>2/14 Thu</td>
+            <td>Clustering + regulatory analysis</td>
+            <td>
+                <ul>
+                    <li>
+                        <a href="https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1004575&type=printable"
+                           target="_blank">SINCERA: A Pipeline for Single-Cell RNA-Seq Profiling Analysis</a><br></li>
+                    <li><a href="https://www.nature.com/articles/s41467-018-03933-2" target="_blank">A geometric
+                        approach to characterize the functional identity of single cells</a><br></li>
+                    <li><a href="https://www.sciencedirect.com/science/article/pii/S2405471217303861?via%3Dihub"
+                           target="_blank">Gene Regulatory Network Inference from Single-Cell Data Using Multivariate
+                        Information Measures</a><br></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>2/19 Tue</td>
+            <td rowspan="2">Temporal ordering</td>
+            <td>
+                <ul>
+                    <li><a href="https://www.nature.com/articles/nbt.2859" target="_blank">The dynamics and regulators
+                        of cell
+                        fate decisions are revealed by pseudotemporal ordering of single cells (monocle 1)</a><br></li>
+                    <li><a href="https://www.nature.com/articles/nmeth.4402" target="_blank">Reversed graph embedding
+                        resolves
+                        complex single-cell trajectories (monocle 2)</a><br></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>2/21 Thu</td>
+            <td>
+                <ul>
+                    <li><a href="https://www.nature.com/articles/nmeth.3971" target="_blank">Diffusion pseudotime
+                        robustly
+                        reconstructs lineage branching</a><br></li>
+                    Further reading:<br>
+                    <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5860270/pdf/btw729.pdf" target="_blank">LEAP:
+                        constructing gene co-expression net- works for single-cell RNA-sequencing data using pseudotime
+                        ordering</a><br></li>
+                    <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5860204/pdf/btx575.pdf" target="_blank">SINCERITIES:
+                        inferring gene regulatory networks from time-stamped single cell transcriptional expression
+                        profiles</a><br></li>
+                    <li><a href="https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-016-1109-3"
+                           target="_blank">SCOUP: a probabilistic model based on the Ornstein–Uhlenbeck process to
+                        analyze
+                        single-cell expression data during differentiation</a><br></li>
+                    <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5860123/pdf/btx194.pdf" target="_blank">SCODE:
+                        an
+                        efficient regulatory network inference algorithm from single-cell RNA-Seq during
+                        differentiation</a><br></li>
+                    <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4765871/pdf/btv257.pdf" target="_blank">Reconstructing
+                        gene regulatory dynamics from high-dimensional single-cell snapshot data</a><br></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>2/26 Tue</td>
+            <td rowspan="2">Spatial transcriptomics</td>
+            <td>
+                <ul>
+                    <li><a href="http://science.sciencemag.org/content/sci/358/6360/194.full.pdf" target="_blank">The
+                        Drosophila
+                        embryo at single-cell transcriptome resolution</a><br></li>
+                    <li>
+                        <a href="http://science.sciencemag.org/content/353/6294/78?casa_token=NLOcJ5AAA28AAAAA:sj3b5gmWyX7YdrBL_w5RL4MlmRZ2uaf2IhQFYJbXRtVVJX-BKa1CQ--rCWRSEtekL4nqE1cHAHACBg"
+                           target="_blank">Visualization and analysis of gene expression in tissue sections by spatial
+                            transcriptomics</a><br></li>
+                    <li><a href="https://www.nature.com/articles/nbt.3192" target="_blank">Spatial reconstruction of
+                        single-cell
+                        gene expression data</a><br></li>
+                    <li><a href="https://www.nature.com/articles/nbt.3209" target="_blank">High-throughput spatial
+                        mapping of
+                        single-cell Rna-seq data to tissue of origin</a><br></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>2/28 Thu</td>
+            <td>
+                <ul>
+                    <li><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003824"
+                           target="_blank">Identifying Cell Types from Spatially Referenced Single-Cell Expression
+                        Datasets
+                        (Markov random field)</a><br></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" class="parts">Part 2: Single-cell RNA-seq + genetics</td>
+        </tr>
+        <tr>
+            <td>3/5 Tue</td>
+            <td>CRISPR+single-cell RNA-seq for genetic screening</td>
+            <td>
+                <ul>
+                    <li><a href="https://www.sciencedirect.com/science/article/pii/S0092867416316117" target="_blank">(CRISP-seq)
+                        Dissecting Immune Circuits by Linking CRISPR-Pooled Screens with Single-Cell RNA-Seq</a><br>
+                    </li>
+                    <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5181115/pdf/nihms835459.pdf"
+                           target="_blank">(Perturb-seq)
+                        Perturb-seq: dissecting molecular circuits with scalable single-cell RNA profiling of pooled
+                        gen-
+                        etic screens</a><br></li>
+                    <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5315571/pdf/nihms832990.pdf"
+                           target="_blank">A
+                        multiplexed single- cell CRISPR screening platform enables systematic dissec- tion of the
+                        unfolded
+                        protein response</a><br></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>3/7 Thu</td>
+            <td>CRISPR+single-cell RNA-seq: genetic screening</td>
+            <td>
+                <ul>
+                    <li><a href="https://www.biorxiv.org/content/biorxiv/early/2016/10/27/083774.full.pdf"
+                           target="_blank">(CROP-seq)
+                        Pooled CRISPR screening with single-cell transcriptome readout</a><br></li>
+                    <li><a href="https://www.cell.com/action/showPdf?pii=S1097-2765%2817%2930174-0" target="_blank">(Mosaic-seq)
+                        Multiplexed engineering and analysis of combinatorial enhancer activity in single cells</a><br>
+                    </li>
+                    <li><a href="https://www.biorxiv.org/content/early/2018/05/04/314344" target="_blank">crisprQTL
+                        mapping as a
+                        genomewide association framework for cellular genetic screens</a><br></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>3/12 Tue</td>
+            <td>
+                No class
+            </td>
+        </tr>
+        <tr>
+            <td>3/14 Thu</td>
+            <td>
+                No class
+            </td>
+        </tr>
+        <tr>
+            <td>3/19 Tue</td>
+            <td rowspan="2">CRISPR + single cell RNA-seq: lineage construction</td>
+            <td>
+                <ul>
+                    <li><a href="http://science.sciencemag.org/content/353/6298/aaf7907.long" target="_blank">Whole-organism
+                        lineage tracing by combinatorial and cumulative genome editing (GESALT)</a><br></li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>3/21 Thu</td>
+            <td>
+                <ul>
+                    <li><a href="https://www.nature.com/articles/nbt.4103" target="_blank">Simultaneous single-cell
+                        profiling of
+                        lineages and cell types in the vertebrate brain (scGESALT)</a><br></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>3/26 Tue</td>
+            <td rowspan="2">Project presentation</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>3/28 Thu</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>4/2 Tue</td>
+            <td>Variant identification</td>
+            <td>
+                <ul>
+                    <li><a href="https://www.nature.com/articles/nmeth.3835" target="_blank">Monovar: single-nucleotide
+                        variant
+                        detection in single cells</a><br></li>
+                    <li><a href="https://www.nature.com/articles/nmeth.3903" target="_blank">Genotyping tumor clones
+                        from
+                        single-cell data</a><br></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>4/4 Thu</td>
+            <td rowspan="2">Phylogeny inference from sc genome seq data</td>
+            <td>
+                <ul>
+                    <li><a href="https://www.nature.com/articles/nmeth.3867" target="_blank">Clonal genotype and
+                        population
+                        structure inference from single-cell tumor sequencing</a><br></li>
+                    <li><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-0929-9"
+                           target="_blank">OncoNEM:
+                        inferring tumor evolution from single-cell sequencing data</a><br></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>4/9 Tue</td>
+            <td>
+                <ul>
+                    <li><a href="https://genomebiology.biomedcentral.com/track/pdf/10.1186/s13059-017-1169-3"
+                           target="_blank">ddClone:
+                        joint statistical inference of clonal populations from single cell and bulk tumour sequencing
+                        data</a><br></li>
+                    <li><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-0936-x"
+                           target="_blank">Tree
+                        inference for single-cell data</a><br></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>4/11 Thu</td>
+            <td>
+                No class
+            </td>
+        </tr>
+        <tr>
+            <td>4/16 Tue</td>
+            <td rowspan="3">Single-cell eQTLs</td>
+            <td>
+                <ul>
+                    <li><a href="https://www.nature.com/articles/s41588-018-0089-9" target="_blank">Single-cell RNA
+                        sequencing
+                        identifies celltype-specific cis-eQTLs and co-expression QTLs</a><br></li>
+                    <li><a href="https://www.nature.com/articles/ng.3737" target="_blank">Identification of
+                        context-dependent
+                        expression quantitative trait loci in whole blood</a><br></li>
+                    <li><a href="https://www.nature.com/articles/nbt.2642" target="_blank">Single-cell gene expression
+                        analysis
+                        reveals genetic associations masked in whole-tissue experiments (precursor of the above
+                        paper)</a><br></li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>4/18 Thu</td>
+            <td>
+                <ul>
+                    <li><a href="https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1005223"
+                           target="_blank">Cell Specific eQTL Analysis without Sorting Cells</a><br></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>4/23 Tue</td>
+            <td>
+                <ul>
+                    <li><a href="https://www.biorxiv.org/content/biorxiv/early/2018/09/23/424192.full.pdf"
+                           target="_blank">Discovery
+                        and characterization of variance QTLs in human induced pluripotent stem cells</a><br></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>4/25 Thu</td>
+            <td>Cancer scRNA-seq with limited genetic info</td>
+            <td>
+                <ul>
+                    <li><a href="https://www.nature.com/articles/nature20123" target="_blank">Single-cell RNA-seq
+                        supports a
+                        developmental hierarchy in human oligodendroglioma</a><br></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>4/30 Tue</td>
+            <td rowspan="2">Project presentation</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>5/2 Thu</td>
+            <td>
+
+            </td>
+        </tr>
+
+
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
